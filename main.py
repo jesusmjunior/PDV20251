@@ -1,11 +1,11 @@
 # main.py
 import streamlit as st
-from pdv20251.auth import autenticar_usuario
-from pdv20251.cadastro_produto import render_cadastro_produto
-from pdv20251.cadastro_cliente import render_cadastro_cliente
-from pdv20251.registro_venda import render_registro_venda
-from pdv20251.relatorios import render_relatorios
-from pdv20251.painel import render_painel
+from auth import autenticar_usuario
+from cadastro_produto import render_cadastro_produto
+from cadastro_cliente import render_cadastro_cliente
+from registro_venda import render_registro_venda
+from relatorios import render_relatorios
+from painel import render_painel
 
 if "autenticado" not in st.session_state:
     st.session_state["autenticado"] = False
